@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by Zerotheme dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="https://www.Zerotheme.com">
+    <link rel="shortcut icon" href="{% static 'images/favicon-1.png'%}" type="image/x-icon">
+    <title>{% block title %} BerbekaPetro {% endblock title%}</title>
+    
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+ 
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"> `
+	
+	<!-- Animate.css -->
+	<link href="{% static 'css/animate.css' %}" rel="stylesheet" media="all" type="text/css">
+	
+	<!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/all.css' %}" rel="stylesheet" type="text/css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="{% static 'owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+{% block main_header%}
+<body id="page-top" class="index-page">
+<div class="wrap-body">
+
+	<!--////////////////////////////////////Header-->
+
+    <header>
+		<!-- Main Header -->
+		<div class="main-header">
+		
+			<!--Navigation-->
+			<nav id="menu" class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+						<a class="navbar-brand logo" href="/mysite/index/">
+							Berbeka Petro
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="/mysite/index/">Головна</a></li>
+							<li><a href="/mysite/about/">Про автора</a></li>
+							<li><a href="/mysite/gallery/">Галерея</a></li>
+							<li><a href="/mysite/contact/">Контакти</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Static Header -->
+			<div class="header-text">
+				<div class="header-text-inner">
+					<h1>Головне - творити з любов'ю</h1>
+					<p>Важливо не просто робити свою роботу, а щоб робота йшла від серця! </p>
+				</div>
+			</div></header-text -->
+			<!-- Scroller -->
+			<div id="scroll-page-content">
+				<a href="#page-content" class="scroller">
+					<div class="scroller-button">
+						<i class="fa fa-angle-down"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+    </header>
+
+	<!-- /Section: intro
+
+
+    <!--////////////////////////////////////Container-->
+    {% block content%}
+	<section id="page-content" class="index-page">
+	
+		<!-- ////////////Content Box 01 -->
+		<section class="box-content box-1">
+			<div class="">
+				<div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+					<h2>Мої роботи</h2>
+					<hr class="line">
+					<div class="intro">Детальнішу інформацію можна знайти <a href="/mysite/gallery/">тут</a></div>
+				</div>
+				<div class="content no-gutter wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/1.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Натюрморти</h3>
+									<p class="product-category">Простий і нехитрий натюрморт маслом може стати добрим подарунком на всі випадки життя.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/2.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Історичні картини</h3>
+									<p class="product-category">Для всіх поціновувачів історичних подій.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/3.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Біблійні картини</h3>
+									<p class="product-category">Картини на різну релігійну тематику, зроблені масляними фарбами на полотні.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/4.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Ікони</h3>
+									<p class="product-category">Виготовляються під замовлення на дереві.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/5.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Біблійні картини</h3>
+									<p class="product-category">Картини на різну релігійну тематику, зроблені масляними фарбами на полотні.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/6.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Розпис храмів.</h3>
+									<p class="product-category">Надзвичайно складний творчий процес.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/7.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Тайна Вечеря</h3>
+									<p class="product-category">Тайна вечеря — остання вечеря Ісуса Христа з учнями-апостолами. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
+						<div class="portfolio-box-inner">
+							<img src="{% static 'images/8.jpg' %}" class="img-responsive" alt="">
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-description">
+									<h3 class="product-name">Природа</h3>
+									<p class="product-category">Унікальні картини на полотні з природними пейзажами пожвавлять будь-який інтер'єр.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center"><a href="/mysite/gallery/" class="btn btn-skin">Дивитись все</a></div>
+			</div>
+		</section>
+		
+		
+		<!-- ////////////Content Box 03 -->
+		<section class="box-content box-3">
+			<div class="container">
+				<div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+					<h2>Надаю наступні види послуг</h2>
+					<hr class="line">
+					<div class="intro">Користуючись абсолютно простим, але все ж таки витонченим досвідом,хочу щоб клієнт завжди залишався задоволеним.</div>
+				</div>
+				<div class="content wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
+					<div class="row">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-md-offset-1 col-sm-offset-1">
+							<div class="box-item">
+                                    <i class="fas fa-camera icon"></i>
+											<h3>Портрет з ваших фото</h3>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-4">
+							<div class="box-item">
+                                    <i class="fas fa-image icon"></i>
+								<h3>Картини на полотні</h3>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 col-sm-4">
+							<div class="box-item">
+								<img src="{% static 'images/design.png' %}" width="50px";/>
+								<h3>Дизайнерські рішення</h3>
+							</div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4">
+                                <div class="box-item">
+                                        <i class="far fa-image icon"></i>
+                                    <h3>Ікони на дереві</h3>
+                                </div>
+                            </div>
+						<div class="col-lg-2 col-md-4 col-sm-4">
+							<div class="box-item">
+                                    <i class="fas fa-church icon"></i>
+                                <h3>Реставрація храмів</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- ////////////Content Box 04 -->
+		<section class="box-content box-5 box-style-3">
+			<div class="container">
+				<div class="row">
+					<div class="box-item wow fadeInDown" data-wow-delay=".1s" data-wow-duration="1s">
+						<blockquote><p>Треба невпинно працювати над собою, щоб жити і пишатись своєю улюбленою справою.</p></blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- ////////////Content Box 05 -->
+		<section class="box-content box-6">
+			<div class="container">
+				<div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+					<h2>Останні роботи</h2>
+					<hr class="line">
+					<div class="intro">Стильні і сучасні картини для дому і для храму</div>
+				</div>
+				<div class="content">
+					<div id="owl-blog" class="owl-carousel">
+						<div class="item">
+							<div class="box-item">
+								<img src="{% static 'images/10.jpg' %}" class="img-responsive"/>
+								<div class="content">
+									<h3><a href="/mysite/gallery/">Три Ангела</a></h3>
+									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-item">
+								<img src="{% static 'images/11.jpg' %}" class="img-responsive"/>
+								<div class="content">
+									<h3><a href="/mysite/gallery/">Різдво Івана Хрестителя</a></h3>
+									<p>Suspendisse porttitor. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis, viverra feugiat ipsum volutpat vitae. Fusce justo turpis, sodales sed placerat non, suscipit at diam.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-item">
+								<img src="{% static 'images/12.jpg' %}" class="img-responsive"/>
+								<div class="content">
+									<h3><a href="/mysite/gallery/">Розп'яття Ісуса</a></h3>
+									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-item">
+								<img src="{% static 'images/13.jpg' %}" class="img-responsive"/>
+								<div class="content">
+									<h3><a href="/mysite/gallery/">Жертва Авраама</a></h3>
+									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
+								</div>
+							</div>
+                        </div>
+                        <div class="item">
+                                <div class="box-item">
+                                    <img src="{% static 'images/14.jpg' %}" class="img-responsive"/>
+                                    <div class="content">
+                                        <h3><a href="/mysite/gallery/">Тайна вечеря</a></h3>
+                                        <p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</section>
+    {% endblock content%}
+	<!--////////////////////////////////////Footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="wrap-footer">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="footer-contact-form">
+							<h2 class="footer-title">Залиште повідомлення</h2>
+							<form name="" method="post" action="contact.php">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="name" id="name" placeholder="Ваше ім'я" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-control input-lg" name="email" id="email" placeholder="Ваш email" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="subject" id="subject" placeholder="Тема повідомлення" required="required" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required" placeholder="Повідомлення" style="height: 190px;"></textarea>
+										</div>						
+									</div>
+								</div>
+								<button type="submit" class="btn btn-skin" name="submitcontact" id="submitcontact">Відправити</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="footer-contact-info">
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Місцезнаходження</h3>
+										<p>Україна, Львівська обл., м.Буськ 80520</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Телефон</h3>
+										<p> +380 97 586 19 80</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Email</h3>
+										<p> berbeka@petrogmail.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="bottom-footer">
+				<ul class="list-inline footer-link link">
+					<li><a href="#">Facebook</a></li>
+				</ul>
+				<div class="copyright">
+					<span>Copyright © 2018 - Designed by Max-Web <a href="#" target="_blank"></a></span>
+				</div>
+			</div> 
+		</div>
+	</footer>
+	<!-- Footer -->
+	<div id="page-top"><a href="#page-top" class="btn btn-toTop"><i class="fa fa-angle-double-up"></i></a></div>
+	
+	<!-- ========== Scripts ========== -->
+	<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.localScroll.min.js' %}"></script>
+	<script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
+	<script src="{% static 'js/SmoothScroll.js' %}"></script>
+	<script src="{% static 'js/wow.min.js' %}"></script>
+	
+	<!-- Owl Carousel JS -->
+	<script src="{% static 'owl-carousel/owl.carousel.js' %}"></script>
+	
+	<!-- Definity JS -->
+	<script src="{% static 'js/main.js' %}"></script>
+	
+</div>
+</body>
+{% endblock main_header%}
+</html>

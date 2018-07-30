@@ -1,0 +1,193 @@
+
+{% extends 'mysite/index.html' %}
+{% block title %}Contact || {{ block.super}} {% endblock %}
+
+{% block main_header%}
+
+<body id="page-top" class="sub-page">
+<div class="wrap-body">
+
+	<!--////////////////////////////////////Header-->
+	<header>
+		<!---Main Header--->
+		<div class="main-header">
+		
+			<!--Navigation-->
+			<nav id="menu" class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+                      <a class="navbar-brand logo" href="/mysite/index/">
+                        Berbeka Petro
+                    </a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="/mysite/index/">Головна</a></li>
+							<li><a href="/mysite/about/">Про автора</a></li>
+							<li><a href="/mysite/gallery/">Галерея</a></li>
+							<li class="active"><a href="/mysite/contact/">Контакти</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Static Header -->
+			<div class="header-text">
+				<div class="header-text-inner">
+					<p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">Завжди на зв'язку</p>
+					<h1 class="wow fadeInLeft" data-wow-duration="1.5s">Мої контакти</h1>
+				</div>
+			</div><!-- /header-text -->
+		</div>
+	</header>
+	<!-- /Section: intro -->
+	{% block content%}
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+		
+		<!-----------------Content-------------------->
+		<section class="box-content">
+			<div class="container">
+				<div class="row">
+					<!--Start Map-->
+					<div id="map" style="height: 450px;"></div>
+					<!--End Map-->
+					<div class="col-md-4 box-item">
+						<h3>Мої контакти</h3>
+						<span>Буду радий зустрічі і відповім на всі ваші запитання.</span><br> <br>
+						<p>Україна, Львівська обл., м.Буськ 80520<br></p>
+						   <p> +380 97 586 19 80<br></p>
+						<p>berbeka@petrogmail.com</p>
+					</div>
+					<div class="col-md-8">
+						<h3>Зв'яжіться зі мною</h3>
+						<form name="form1" method="post" action="contact.php">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+									<input type="text" class="form-control input-lg" name="name" id="name" placeholder="Ваше ім'я" required="required" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control input-lg" name="email" id="email" placeholder="Ваш email" required="required" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control input-lg" name="subject" id="subject" placeholder="Тема" required="required" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required" placeholder="Повідомлення" style="height: 170px;"></textarea>
+									</div>						
+									<button type="submit" class="btn btn-skin btn-block" name="submitcontact" id="submitcontact">Відправити</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+    {% endblock content%}
+	<!--////////////////////////////////////Footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="wrap-footer">
+
+			<div class="bottom-footer">
+				<ul class="list-inline footer-link link">
+					<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+				</ul>
+				<div class="copyright">
+					<span>Copyright © 2018 - Designed by Max-Web <a href="#" target="_blank"></a></span>
+				</div>
+			</div> 
+		</div>
+	</footer>
+	<!-- Footer -->
+	<div id="page-top"><a href="#page-top" class="btn btn-toTop"><i class="fa fa-angle-double-up"></i></a></div>
+	
+	<!-- JS -->
+	<script src="/static/js/jquery-3.1.1.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.localScroll.min.js"></script>
+	<script src="/static/js/jquery.scrollTo.min.js"></script>
+	<script src="/static/js/SmoothScroll.js"></script>
+	<script src="/static/js/wow.min.js"></script>
+	
+	<!-- Google Map -->
+	<script>
+	  var marker;
+	  var image = '/static/images/map-marker.png';
+      function initMap() {
+        var myLatLng = {lat: 49.97, lng: 24.61};
+
+		// Specify features and elements to define styles.
+        var styleArray = [
+          {
+            featureType: "all",
+            stylers: [
+             { saturation: -80 }
+            ]
+          },{
+            featureType: "road.arterial",
+            elementType: "geometry",
+            stylers: [
+              { hue: "#000000" },
+              { saturation: 50 }
+            ]
+          },{
+            featureType: "poi.business",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+        ];
+		
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          scrollwheel: false,
+		   // Apply the map style array to the map.
+          styles: styleArray,
+          zoom: 7
+        });
+
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map
+        });
+
+		// Create a marker and set its position.
+        marker = new google.maps.Marker({
+          map: map,
+		  icon: image,
+		  draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: myLatLng
+        });
+		marker.addListener('click', toggleBounce);
+      }
+	  
+	  function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
+	
+	<!-- Definity JS -->
+	<script src="/static/js/main.js"></script>
+</div>	
+</body>
+{% endblock main_header%}

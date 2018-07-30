@@ -1,0 +1,230 @@
+{% extends 'mysite/index.html' %}
+{% block title %}About || {{ block.super}} {% endblock %}
+
+
+{% block main_header%}
+<body id="page-top" class="sub-page">
+<div class="wrap-body">
+
+	<header>
+		<!---Main Header--->
+		<div class="main-header">
+		
+			<!--Navigation-->
+			<nav id="menu" class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+                      <a class="navbar-brand logo" href="/mysite/index/">
+                        Berbeka Petro
+                    </a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="/mysite/index/">Головна</a></li>
+							<li><a href="/mysite/about/">Про автора</a></li>
+							<li class="active"><a href="/mysite/gallery/">Галерея</a></li>
+							<li><a href="/mysite/contact/">Контакти</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Static Header -->
+			<div class="header-text">
+				<div class="header-text-inner">
+					<p class="wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">Latest blog posts</p>
+					<h1 class="wow fadeInLeft" data-wow-duration="1.5s">Blog</h1>
+				</div>
+			</div><!-- /header-text -->
+		</div>
+	</header>
+	<!-- /Section: intro -->
+    {% block content%}	
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+		
+		<div class="box-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<!-----------------Content-------------------->
+						<article>
+							<div class="wrap-post"><!--Start Box-->
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="single.html">RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY</a></h2>
+									<span class="entry-meta">
+										<ul class="list-inline link">
+											<li>By <a href="#">BUSINESS</a></li>
+											<li><a href="#">August, 22 2016</a></li>
+											<li><a href="#">0 comments</a></li>
+										</ul>
+									</span>
+								</div>
+								<div class="post-thumbnail-wrap">
+									<div class="portfolio-box zoom-effect">
+										<img src="images/11.jpg" class="img-responsive" alt="">
+									</div>
+								</div>
+								<div class="entry-content">
+									<p>Figgis is a member of this unique, new wave of young underground artists bringing painting back to circulation this year. Quite honestly, we’re almost sure that this group’s art is the antidote to process-led abstraction that took serious hold in 2014. At 42 years old, Figgis is not a complete newbie though, but with her…</p>
+									<a class="btn btn-skin" href="single.html">Read More</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="wrap-post"><!--Start Box-->
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="single.html">RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY</a></h2>
+									<span class="entry-meta">
+										<ul class="list-inline link">
+											<li>By <a href="#">BUSINESS</a></li>
+											<li><a href="#">August, 22 2016</a></li>
+											<li><a href="#">0 comments</a></li>
+										</ul>
+									</span>
+								</div>
+								<div class="post-thumbnail-wrap">
+									<div class="portfolio-box zoom-effect">
+										<img src="images/12.jpg" class="img-responsive" alt="">
+									</div>
+								</div>
+								<div class="entry-content">
+									<p>Figgis is a member of this unique, new wave of young underground artists bringing painting back to circulation this year. Quite honestly, we’re almost sure that this group’s art is the antidote to process-led abstraction that took serious hold in 2014. At 42 years old, Figgis is not a complete newbie though, but with her…</p>
+									<a class="btn btn-skin" href="single.html">Read More</a>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="wrap-post"><!--Start Box-->
+								<div class="entry-header">
+									<h2 class="entry-title"><a href="single.html">RETRO GALLERY: FRAGMENTING PERSISTENT FLIGHT AND PATHOLOGY</a></h2>
+									<span class="entry-meta">
+										<ul class="list-inline link">
+											<li>By <a href="#">BUSINESS</a></li>
+											<li><a href="#">August, 22 2016</a></li>
+											<li><a href="#">0 comments</a></li>
+										</ul>
+									</span>
+								</div>
+								<div class="post-thumbnail-wrap">
+									<div class="portfolio-box zoom-effect">
+										<img src="images/13.jpg" class="img-responsive" alt="">
+									</div>
+								</div>
+								<div class="entry-content">
+									<p>Figgis is a member of this unique, new wave of young underground artists bringing painting back to circulation this year. Quite honestly, we’re almost sure that this group’s art is the antidote to process-led abstraction that took serious hold in 2014. At 42 years old, Figgis is not a complete newbie though, but with her…</p>
+									<a class="btn btn-skin" href="single.html">Read More</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+    {% endblock content%}		
+	<!--////////////////////////////////////Footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="wrap-footer">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="footer-contact-form">
+							<h2 class="footer-title">Залиште повідомлення</h2>
+							<form name="" method="post" action="contact.php">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="name" id="name" placeholder="Ваше ім'я" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-control input-lg" name="email" id="email" placeholder="Ваш email" required="required" />
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control input-lg" name="subject" id="subject" placeholder="Тема" required="required" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required" placeholder="Повідомлення" style="height: 190px;"></textarea>
+										</div>						
+									</div>
+								</div>
+								<button type="submit" class="btn btn-skin" name="submitcontact" id="submitcontact">Відправити</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="footer-contact-info">
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Місцезнаходження</h3>
+										<p>Україна, Львівська обл., м.Буськ 80520</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Мій телефон</h3>
+										<p> +380 97 586 19 80</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-info-item">
+								<div class="row">
+									<div class="col-md-1">
+										<div class="contact-info-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+									</div>
+									<div class="col-md-10">
+										<h3>Email</h3>
+										<p>berbeka@petrogmail.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<ul class="list-inline footer-link link">
+					<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+				</ul>
+				<div class="copyright">
+					<span>Copyright © 2018 - Designed by Max-Web <a href="#" target="_blank"></a></span>
+				</div>
+			</div> 
+		</div>
+	</footer>
+	<!-- Footer -->
+	<div id="page-top"><a href="#page-top" class="btn btn-toTop"><i class="fa fa-angle-double-up"></i></a></div>
+	
+	<!-- JS -->
+	<script src="/static/js/jquery-3.1.1.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.localScroll.min.js"></script>
+	<script src="/static/js/jquery.scrollTo.min.js"></script>
+	<script src="/static/js/SmoothScroll.js"></script>
+	<script src="/static/js/wow.min.js"></script>
+	
+	<!-- Definity JS -->
+	<script src="/static/js/main.js"></script>
+
+</div>
+</body>
+{% endblock main_header%}
