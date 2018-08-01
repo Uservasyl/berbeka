@@ -50,16 +50,16 @@
 				<div class="container-fluid">
 					<div class="navbar-header">
 					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-						<a class="navbar-brand logo" href="/mysite/index/">
+						<a class="navbar-brand logo" href="{% url 'index' %}">
 							Berbeka Petro
 						</a>
 					</div>
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="/mysite/index/">Головна</a></li>
-							<li><a href="about/">Про автора</a></li>
-							<li><a href="/mysite/gallery/">Галерея</a></li>
-							<li><a href="/mysite/contact/">Контакти</a></li>
+							<li class="active"><a href="{% url 'index' %}">Головна</a></li>
+							<li><a href="{% url 'about' %}">Про автора</a></li>
+							<li><a href="{% url 'gallery' %}">Галерея</a></li>
+							<li><a href="{% url 'contact' %}">Контакти</a></li>
 						</ul>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 				<div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
 					<h2>Мої роботи</h2>
 					<hr class="line">
-					<div class="intro">Детальнішу інформацію можна знайти <a href="/mysite/gallery/">тут</a></div>
+					<div class="intro">Детальнішу інформацію можна знайти <a href="{% url 'gallery' %}">тут</a></div>
 				</div>
 				<div class="content no-gutter wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">
 					<div class="portfolio-box col-lg-3 col-md-4 col-xs-6">
@@ -187,7 +187,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="text-center"><a href="/mysite/gallery/" class="btn btn-skin">Дивитись все</a></div>
+				<div class="text-center"><a href="{% url 'gallery' %}" class="btn btn-skin">Дивитись все</a></div>
 			</div>
 		</section>
 		
@@ -263,7 +263,7 @@
 							<div class="box-item">
 								<img src="{% static 'images/10.jpg' %}" class="img-responsive"/>
 								<div class="content">
-									<h3><a href="/mysite/gallery/">Три Ангела</a></h3>
+									<h3><a href="{% url 'gallery' %}">Три Ангела</a></h3>
 									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
 								</div>
 							</div>
@@ -272,7 +272,7 @@
 							<div class="box-item">
 								<img src="{% static 'images/11.jpg' %}" class="img-responsive"/>
 								<div class="content">
-									<h3><a href="/mysite/gallery/">Різдво Івана Хрестителя</a></h3>
+									<h3><a href="{% url 'gallery' %}">Різдво Івана Хрестителя</a></h3>
 									<p>Suspendisse porttitor. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis, viverra feugiat ipsum volutpat vitae. Fusce justo turpis, sodales sed placerat non, suscipit at diam.</p>
 								</div>
 							</div>
@@ -281,7 +281,7 @@
 							<div class="box-item">
 								<img src="{% static 'images/12.jpg' %}" class="img-responsive"/>
 								<div class="content">
-									<h3><a href="/mysite/gallery/">Розп'яття Ісуса</a></h3>
+									<h3><a href="{% url 'gallery' %}">Розп'яття Ісуса</a></h3>
 									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
 								</div>
 							</div>
@@ -290,7 +290,7 @@
 							<div class="box-item">
 								<img src="{% static 'images/13.jpg' %}" class="img-responsive"/>
 								<div class="content">
-									<h3><a href="/mysite/gallery/">Жертва Авраама</a></h3>
+									<h3><a href="{% url 'gallery' %}">Жертва Авраама</a></h3>
 									<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
 								</div>
 							</div>
@@ -299,7 +299,7 @@
                                 <div class="box-item">
                                     <img src="{% static 'images/14.jpg' %}" class="img-responsive"/>
                                     <div class="content">
-                                        <h3><a href="/mysite/gallery/">Тайна вечеря</a></h3>
+                                        <h3><a href="{% url 'gallery' %}">Тайна вечеря</a></h3>
                                         <p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus.</p>
                                     </div>
                                 </div>
@@ -379,7 +379,7 @@
 									</div>
 									<div class="col-md-10">
 										<h3>Email</h3>
-										<p> berbeka@petrogmail.com</p>
+										<p> berbeka_petro@gmail.com</p>
 									</div>
 								</div>
 							</div>

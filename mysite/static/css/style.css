@@ -321,7 +321,10 @@ footer .contact-info-item h3{font-size: 16px;text-transform: uppercase;color: #e
 
 footer .contact-info-icon i.fa{font-size: 23px;color: #e9e9e9;}
 
-
+.fa-facebook-square::before {
+    padding-right: 15px;
+    font-size: 20px;
+}
 footer .bottom-footer{padding: 20px 0 10px;text-align:center;}
 footer .copyright{padding: 15px 0;font-size: 16px;}
 footer .fa{font-size: 25px;}

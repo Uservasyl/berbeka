@@ -16,16 +16,16 @@
 				<div class="container-fluid">
 					<div class="navbar-header">
 					  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-                      <a class="navbar-brand logo" href="/mysite/index/">
+                      <a class="navbar-brand logo" href="{% url 'index' %}">
                         Berbeka Petro
                     </a>
 					</div>
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="/mysite/index/">Головна</a></li>
-							<li class="active"><a href="/mysite/about/">Про автора</a></li>
-							<li><a href="/mysite/gallery/">Галерея</a></li>
-							<li><a href="/mysite/contact/">Контакти</a></li>
+							<li><a href="{% url 'index' %}">Головна</a></li>
+							<li class="active"><a href="{% url 'about' %}">Про автора</a></li>
+							<li><a href="{% url 'gallery' %}">Галерея</a></li>
+							<li><a href="{% url 'contact' %}">Контакти</a></li>
 						</ul>
 					</div>
 				</div>
@@ -106,7 +106,7 @@
 
 			<div class="bottom-footer">
 				<ul class="list-inline footer-link link">
-					<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
 				</ul>
 				<div class="copyright">
 					<span>Copyright © 2018 - Designed by Max-Web <a href="#" target="_blank"></a></span>
